@@ -28,6 +28,28 @@ The project includes data preprocessing, model training, evaluation, and a Strea
 - Trained model saved in `models/`
 - Evaluation metrics and plots in `results/`
 
+
+## Model Performance
+
+**Test Accuracy:** `0.8318`
+
+### Classification Report
+
+| Class                   | Precision | Recall | F1-Score | Support |
+|-------------------------|-----------|--------|----------|---------|
+| Bacterial Leaf Blight   | 0.74      | 0.91   | 0.82     | 1823    |
+| Brown Spot              | 0.85      | 0.91   | 0.88     | 1832    |
+| Leaf Smut               | 0.91      | 0.72   | 0.80     | 2640    |
+| **Macro Avg**           | 0.83      | 0.85   | 0.83     | 6295    |
+| **Weighted Avg**        | 0.84      | 0.83   | 0.83     | 6295    |
+
+- **Precision**: How many selected items are relevant.
+- **Recall**: How many relevant items are selected.
+- **F1-Score**: Harmonic mean of precision and recall.
+
+These results indicate strong performance, especially for "Brown Spot" and "Leaf Smut" classes, with overall balanced precision and recall
+
+
 ## Project Structure
 - `data/`: Raw, processed, and augmented datasets
 - `models/`: Saved models
